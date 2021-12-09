@@ -1,0 +1,36 @@
+.row {
+    color: #fff;
+    padding: 20px 50px;
+}
+
+.row__posters {
+    display: flex;
+    width: 100%;
+    /*overflow: hidden;*/
+}
+
+.row__title {
+    font-size: 1.2vw;
+    font-weight: bold;
+    padding: 20px 0;
+}
+
+.row__poster {
+    width: 16.6%;
+    height: 16.6%;
+    padding: 0 0.2vw;
+    box-sizing: border-box;
+    display: inline-block;
+    position: relative;
+    white-space: normal;
+    vertical-align: top;
+    z-index: 1;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+
+.row__poster:hover {
+    transform: scale(1.7, 1.7);
+    transition-duration: 0.5s;
+    z-index: 2;
+}

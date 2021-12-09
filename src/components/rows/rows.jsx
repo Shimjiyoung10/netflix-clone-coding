@@ -1,8 +1,15 @@
 import React, { useState, useEffect } from "react";
 import axios from '../../api/axios';
-import requests from "../../api/request";
+// import requests from "../../api/request";
+import styled from "styled-components";
 
-import "./Row.css";
+import "./row.css";
+
+const StyledTitle = styled.div`
+    font-size: 1.2vw;
+    font-weight: bold;
+    padding: 20px 0;
+`
 
 const base_url = "https://image.tmdb.org/t/p/original/";
 function Rows({ title, fetchUrl, isLargeRow = false }) {
@@ -36,8 +43,7 @@ function Rows({ title, fetchUrl, isLargeRow = false }) {
 
     return (
         <div className="row">
-            <h2>{title}</h2>
-            
+            <StyledTitle>{title}</StyledTitle>
             <div className="row__posters">
                 {movies.map((movie) => (
                     <img
