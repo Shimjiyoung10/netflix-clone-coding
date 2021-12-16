@@ -1,0 +1,34 @@
+목표 : app 컴포넌트에 state가 바뀌고
+그 바뀐 state가 Content의 component의 props 값으로 전달되므로써 동적으로
+어플리케이션이 바뀌도록 구현하는 것
+
+state값이 바뀔때 마다 다시 랜더링
+랜더 함수 하위에 있는 함수들도 각자 랜더함수가 있는데 걔네들도 다시 다 호출됨
+그래서 화면이 다시 그려짐
+
+render -> 어떤 화면을 구현할 것인지
+
+props나 state값이 바뀌면 해당되는 컴포넌트 랜더함수가 호출되도록 약속되어있다.
+= 화면이 다시 그려진다.
+
+* 이벤트 설치
+Subject 밖에 있는 App 상태 바꾸기
+
+onClick={} 이런식으로 작성해야함
+
+debugger 넣으면 거기서 멈춤
+
+.bind(this)
+this는 component
+
+react가 시키는 대로 써야한다.
+this.state.mode = '' 이렇게 말고
+this.setState({
+    mode: 'welcome'
+}) 이런식으로
+
+* bind 함수
+
+
+
+
